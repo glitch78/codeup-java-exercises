@@ -8,8 +8,11 @@ public class HelloWorld {
 
         String myString = "I'm Tired";
         System.out.println(myString);
+//        long myNumber;
+////         myNumber = 123L;
+//        System.out.println(myNumber);
 
-        float myNumber = 123L;
+        float myNumber = 3.14F;
         System.out.println(myNumber);
 
 //        int x = 5;
@@ -26,10 +29,20 @@ public class HelloWorld {
 //        int y = 4;
 //        y = y * x;
 
-        int x = 3, y = 4;
+//        int x = 3, y = 4;
+//
+//        y *= x;
+//
+//        System.out.println(y);
 
-        y *= x;
-
+        short x = 4;
+            int y = x;
+        System.out.println(x);
         System.out.println(y);
+
+        int a = 100000;
+            long b = (long) a;
+        System.out.println(a);
+        System.out.println(b);
     }
 }
