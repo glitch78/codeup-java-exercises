@@ -54,15 +54,29 @@ public class ControlFlowExercises {
 //                System.out.println(toOneHundred);
 //            }
 //        }
-        System.out.println("Please enter a number");
-        int num = Integer.parseInt(input.nextLine()) ;
-        System.out.println("Here is your table");
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------- | -----");
-        for(int counter = 1; counter <= num; counter++){
-            System.out.println(String.format("%d | %d | $d", counter, Math.pow(counter,2),Math.pow(counter,3)));
+//        System.out.println("Please enter a number");
+//        int num = Integer.parseInt(input.nextLine()) ;
+//        System.out.println("Here is your table");
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------- | -----");
+//        for(int counter = 1; counter <= num; counter++){
+//            System.out.println(String.format("%d | %d | $d", counter, Math.pow(counter,2),Math.pow(counter,3)));
+//        }
+        System.out.println("Enter a grade");
+        int grade = Integer.parseInt(input.nextLine()) ;
+        String gradeLetter = "";
+        if(grade <= 100 && grade >= 88){
+           gradeLetter = "A";
+        } else if(grade <= 87 && grade >= 80){
+            gradeLetter = "B";
+        }else if(grade <= 79 && grade >= 67){
+            gradeLetter = "C";
+        }else if(grade <=66 && grade >= 60){
+            gradeLetter = "D";
+        }else if(grade <= 59 && grade >= 0){
+            gradeLetter = "F";
         }
-
+        System.out.println(gradeLetter);
     }
 }
 
