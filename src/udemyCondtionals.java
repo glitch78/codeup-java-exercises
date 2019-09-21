@@ -145,7 +145,15 @@ public class udemyCondtionals {
 //            System.out.println(i);
 //        }
 
-
+        ///////// Break and continue /////////
+//
+//        for(int i = 1; i <= 10; i ++){
+//            if(i == 5){
+////                break;
+//                continue;
+//            }
+//            System.out.println(i);
+//     }
 
     }
 }
