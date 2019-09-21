@@ -1,6 +1,6 @@
 
 import jdk.swing.interop.SwingInterOpUtils;
-
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -154,6 +154,18 @@ public class udemyCondtionals {
 //            }
 //            System.out.println(i);
 //     }
+
+
+        //////// The do-while loop ////////////
+
+        String again;
+
+        do {
+            int num = ThreadLocalRandom.current().nextInt(1, 7);
+            System.out.println("You rolled a " + num + ".");
+            System.out.println("Roll again, yes or no");
+            again = sc.next();
+        } while (again.equalsIgnoreCase("yes"));
 
     }
 }
