@@ -157,16 +157,32 @@ public class udemyCondtionals {
 
 
         //////// The do-while loop ////////////
+//
+//        String again;
+//
+//        do {
+//            int num = ThreadLocalRandom.current().nextInt(1, 7);
+//            System.out.println("You rolled a " + num + ".");
+//            System.out.println("Roll again, yes or no");
+//            again = sc.next();
+//        } while (again.equalsIgnoreCase("yes"));
 
-        String again;
+      //////// The modulo operator ////////
+//        Write a program which prints numbers from 89 to 117
+//
+//        for(int i = 89; i <= 117; i++) {
+//            System.out.println(i);
+//        }
+//        Write a program which prints numbers from 1 to 40. After every third number, print “Quack.”.
 
-        do {
-            int num = ThreadLocalRandom.current().nextInt(1, 7);
-            System.out.println("You rolled a " + num + ".");
-            System.out.println("Roll again, yes or no");
-            again = sc.next();
-        } while (again.equalsIgnoreCase("yes"));
-
+        for(int i = 1; i <= 40; i++){
+            if(i % 3==0){
+                System.out.println(i +"\nQuack");
+            }
+            else {
+                System.out.println(i);
+            }
+        }
     }
 }
 
