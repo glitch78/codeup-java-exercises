@@ -50,15 +50,37 @@ public class udemyCondtionals {
         System.out.println("Age");
         int age = sc.nextInt();
 
-        System.out.println("Do you have a vip pass? yes/no");
-        String vipPassReply = sc.next();
 
 
+//
+//
+//
+//        if (age >= 18 && vipPassReply.equalsIgnoreCase("Yes")|| age>= 70) {
+//            System.out.println("Thanks, go on in");
+//        } else {
+//            System.out.println("Sorry, can't let you in.");
+//        }
+        ///////// Nesting if-statements  ///////////
+//
+//        if (age>= 70 || (age >= 18 && vipPassReply.equalsIgnoreCase("Yes"))) {
+//            System.out.println("Thanks, go on in");
+//        } else {
+//            System.out.println("Sorry, can't let you in.");
+//        }
 
-        if (age >= 18 && vipPassReply.equalsIgnoreCase("Yes")|| age>= 70) {
-            System.out.println("Thanks, go on in");
-        } else {
-            System.out.println("Sorry, can't let you in.");
+        if(age >= 18){
+            System.out.println("Do you have a vip pass? yes/no");
+            String vipPassReply = sc.next();
+
+            if(vipPassReply.equalsIgnoreCase("yes") || age >= 70){
+                System.out.println("Thanks, go on in!");
+            }
+            else {
+                System.out.println("Sorry, you must be over 70 or  have a pass");
+            }
+        }
+        else {
+            System.out.println("Sorry, you must be 18");
         }
     }
 }
