@@ -37,36 +37,36 @@ public class extraPractice {
 
         ///////// The following methods are from the following youtube link: https://www.youtube.com/watch?v=-IJ5izjbWIA \\\\\\\\\\\\\\
 
-//        sayHelloWorld();
-//
-//        sayHelloTo("Sydney");
-//
-//        int x = return5();
-//        System.out.println(x);
-//
-//        int result = square(return5());
-//        System.out.println(result);
-//    }
-//    // This method returns a value, and takes in dada
-//    static int square(int x){
-//        return x * x;
-//    }
-//
-//    // This method returns an int type with the value of 5
-//    static int return5() {
-//        return 5;
-//    }
-//
-//    // This method will say hello with the name that has been passed when called
-//    static void sayHelloTo(String name) {
-//        System.out.println("Say Hello to " + name);
-//    }
-//     //This method says Hello, World!
-//    static void sayHelloWorld() {
-//        System.out.println("Hello, World");
+        sayHelloWorld();
+
+        sayHelloTo("Sydney");
+
+        int x = return5();
+        System.out.println(x);
+
+        int result = square(return5());
+        System.out.println(result);
+    }
+    // This method returns a value, and takes in dada
+    static int square(int x){
+        return x * x;
+    }
+
+    // This method returns an int type with the value of 5
+    static int return5() {
+        return 5;
+    }
+
+    // This method will say hello with the name that has been passed when called
+    static void sayHelloTo(String name) {
+        System.out.println("Say Hello to " + name);
+    }
+     //This method says Hello, World!
+    static void sayHelloWorld() {
+        System.out.println("Hello, World");
 
 
-        /// Objects Pracice///////
+        /// Objects Practice///////
         JFrame window = new JFrame();   // window variable that holds JFrame objects, and create Jframe to assign to our variable
         window.setTitle("JFrame Window"); // calling methods on our JFrame object to configure it
         window.setSize(800, 600);

@@ -109,26 +109,44 @@ public class udemyCondtionals {
 //
 //        You can use the line of code below which produces a random number from 1 to 5 and stores it in a variable called randomNumber.
 
-        int min = 1;
-        int max = 5;
-        int range = max - min + 1;
+//        int min = 1;
+//        int max = 5;
+//        int range = max - min + 1;
+//
+//        int randomNumber = (int) (Math.random() * range + min);
+//        System.out.println(randomNumber);
+//
+//        System.out.println("Guess a number between 1 and 5");
+//        int guessedNumber = sc.nextInt();
+//        if (guessedNumber == randomNumber) {
+//            System.out.println(" Aren’t you lucky.");
+//        } else {
+//            System.out.println("Wrong, you have one more guess");
+//            guessedNumber = sc.nextInt();
+//            if (guessedNumber == randomNumber) {
+//                System.out.println("Got it right the second time");
+//            } else {
+//                System.out.println("Wrong number, better luck next time");
+//            }
+//        }
+        /////////// The while loop ///////////
+//
+//        int i = 0;
+//
+//        while(i < 10){
+//            System.out.println("test");
+//            i = i + 1;
+//
+//        }
 
-        int randomNumber = (int) (Math.random() * range + min);
-        System.out.println(randomNumber);
+        /////////// For Loop ////////////
+//
+//        for(int i = 7; i <= 21; i ++){
+//            System.out.println(i);
+//        }
 
-        System.out.println("Guess a number between 1 and 5");
-        int guessedNumber = sc.nextInt();
-        if (guessedNumber == randomNumber) {
-            System.out.println(" Aren’t you lucky.");
-        } else {
-            System.out.println("Wrong, you have one more guess");
-            guessedNumber = sc.nextInt();
-            if (guessedNumber == randomNumber) {
-                System.out.println("Got it right the second time");
-            } else {
-                System.out.println("Wrong number, better luck next time");
-            }
-        }
+
+
     }
 }
 

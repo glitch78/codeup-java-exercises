@@ -30,17 +30,30 @@ public class Bob {
 //               System.out.println("ok");
 //           }
 
-        String  response = input.nextLine();
-        System.out.println(response);
+//        String  response = input.nextLine();
+//        System.out.println(response);
+//
+//        if(response.endsWith("?")) {
+//            System.out.println("sure");
+//        } else if(response.endsWith("!"))
+//            System.out.println("Whoa, Chill!");
+//        else if(response.isEmpty()) {
+//            System.out.println("Fine. Be that way!");
+//        }else {
+//            System.out.println("Whatever");
+//
+//        }
 
-        if(response.endsWith("?")) {
+        String response = input.nextLine();
+        System.out.println(response);
+        if(response.endsWith("?")){
             System.out.println("sure");
-        } else if(response.endsWith("!"))
-            System.out.println("Whoa, Chill!");
-        else if(response.isEmpty()) {
-            System.out.println("Fine. Be that way!");
-        }else {
+        } else if(response.endsWith("!")) {
+            System.out.println("Whoa, chill out!");
+        } else if(response.isEmpty()){
+            System.out.println("Fine, be that way!");
+        } else {
             System.out.println("Whatever");
         }
-    }
+   }
 }
