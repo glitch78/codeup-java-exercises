@@ -211,25 +211,33 @@ public class udemyCondtionals {
 //        You can use the line of code below which produces a random number from 1 to 100, and stores it in randomNumber.
 
 
+//
+//            int randomNumber = ThreadLocalRandom.current().nextInt(1, 101);
+//            int guess;
+//            int guessCount = 0;
+//        System.out.println(randomNumber);
+//            do {
+//                System.out.println("Enter a number between one and one hundred");
+//                guess = sc.nextInt();
+//                guessCount++;
+//                if(guess < randomNumber){
+//                    System.out.println("HIGHER");
+//                } else if(guess > randomNumber){ ;
+//                    System.out.println("LOWER");
+//                } else {
+//                    System.out.println("CORRECT! My number was: " + randomNumber);
+//                    System.out.println("It took you " + guessCount + " guesses to guess my number.");
+//                }
+//            } while(guess != randomNumber);
 
-            int randomNumber = ThreadLocalRandom.current().nextInt(1, 101);
-            int guess;
-            int guessCount = 0;
-        System.out.println(randomNumber);
-            do {
-                System.out.println("Enter a number between one and one hundred");
-                guess = sc.nextInt();
-                guessCount++;
-                if(guess < randomNumber){
-                    System.out.println("HIGHER");
-                } else if(guess > randomNumber){ ;
-                    System.out.println("LOWER");
-                } else {
-                    System.out.println("CORRECT! My number was: " + randomNumber);
-                    System.out.println("It took you " + guessCount + " guesses to guess my number.");
-                }
-            } while(guess != randomNumber);
+        ///////// Introduction to arrays //////////
 
+//        int[] b = {75,29, 350,7, 4192};
+//        System.out.println(b[3]);
+//
+//        for(int i = 0; i < 5; i++){
+//            System.out.println(b[i]);
+//        }
 
    }
 }
