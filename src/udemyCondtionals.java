@@ -264,16 +264,39 @@ public class udemyCondtionals {
 //        System.out.println();
 //        double avg = (double) sumOfNums / arbitraryNumbers.length;
 //        System.out.println("The average of arbitrary numbers is " + avg);
+//
+//        String[] predictions =  new String[3];
+//        predictions[0] = "A pioneer";
+//        predictions[1] = "You will be loved by many";
+//        predictions[2] = "you'll be very wealthy";
+//
+//        System.out.println("I will predict your future, choose 1, 2, or 3.");
+//        int choice = sc.nextInt();
+//
+//        System.out.println("In the future you will be " + predictions[choice -1]);
 
-        String[] predictions =  new String[3];
-        predictions[0] = "A pioneer";
-        predictions[1] = "You will be loved by many";
-        predictions[2] = "you'll be very wealthy";
+        /////////  Inputting data and generating a statistic /////////
+        // exercise on race car driver lap times
 
-        System.out.println("I will predict your future, choose 1, 2, or 3.");
-        int choice = sc.nextInt();
+        System.out.println("Number of laps: ");
 
-        System.out.println("In the future you will be " + predictions[choice -1]);
+
+        int numberOfLaps = sc.nextInt();
+
+        double[] lapTimes = new double[numberOfLaps];
+
+        for(int i = 0; i < numberOfLaps; i++){
+            System.out.println("Lap time:");
+            lapTimes[i] = sc.nextDouble();
+        }
+        double fastestTime = lapTimes[0];
+        for(int i = 0; i < lapTimes.length; i++){
+            if(lapTimes[i] < fastestTime){
+                fastestTime = lapTimes[i];
+            }
+        }
+
+        System.out.println("The fastest time was: " + fastestTime);
     }
 }
 
