@@ -232,13 +232,39 @@ public class udemyCondtionals {
 
         ///////// Introduction to arrays //////////
 
-//        int[] b = {75,29, 350,7, 4192};
+        int[] arbitraryNumbers = {75,29, 350,7, 204, 88, 67};
 //        System.out.println(b[3]);
 //
 //        for(int i = 0; i < 5; i++){
 //            System.out.println(b[i]);
 //        }
 
-   }
+        /////// Adaptive iteration /////////
+
+//        for(int i = arbitraryNumbers.length - 1; i >=0; i--){
+//            System.out.println(arbitraryNumbers[i]);
+//        }
+
+        /////// Simple processing using arrays /////////
+        int count = 0;
+        int sumOfNums = 0;
+
+        for(int i = 0; i < arbitraryNumbers.length; i++){
+            // count all numbers over 100
+        if(arbitraryNumbers[i] > 100){
+            System.out.println(arbitraryNumbers[i]);
+            count++;
+
+        }
+        // add up all numbers
+        sumOfNums = sumOfNums + arbitraryNumbers[i];
+
+        }
+        System.out.println("There were " + count + " numbers over one hundred" );
+        System.out.println();
+        double avg = (double) sumOfNums / arbitraryNumbers.length;
+        System.out.println("The average of arbitrary numbers is " + avg);
+
+    }
 }
 
