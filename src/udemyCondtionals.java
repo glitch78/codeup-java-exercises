@@ -214,20 +214,23 @@ public class udemyCondtionals {
 
             int randomNumber = ThreadLocalRandom.current().nextInt(1, 101);
             int guess;
+            int guessCount = 0;
         System.out.println(randomNumber);
             do {
                 System.out.println("Enter a number between one and one hundred");
                 guess = sc.nextInt();
+                guessCount++;
                 if(guess < randomNumber){
-
                     System.out.println("HIGHER");
-                } else if(guess > randomNumber){
-                    System.out.println(randomNumber);
+                } else if(guess > randomNumber){ ;
                     System.out.println("LOWER");
                 } else {
-                    System.out.println("CORRECT!");
+                    System.out.println("CORRECT! My number was: " + randomNumber);
+                    System.out.println("It took you " + guessCount + " guesses to guess my number.");
                 }
             } while(guess != randomNumber);
+
+
    }
 }
 
