@@ -201,9 +201,33 @@ public class udemyCondtionals {
         //Write a program which makes use of a loop to print the following output:
         //0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
 
-        for(int i = 0; i <= 10; i++ ){
-            System.out.println(i);
-        }
+//        for(int i = 0; i <= 10; i++ ){
+//            System.out.println(i);
+//        }
+
+
+//        Create a game where the program picks a random number from 1 to 100 and the player has to guess it. Each time the player makes a guess, print “HIGHER” if the guess was too low or “LOWER” if the guess was too high. If the player correctly guesses the number, print “CORRECT”, then end the game.
+//
+//        You can use the line of code below which produces a random number from 1 to 100, and stores it in randomNumber.
+
+
+
+            int randomNumber = ThreadLocalRandom.current().nextInt(1, 101);
+            int guess;
+        System.out.println(randomNumber);
+            do {
+                System.out.println("Enter a number between one and one hundred");
+                guess = sc.nextInt();
+                if(guess < randomNumber){
+
+                    System.out.println("HIGHER");
+                } else if(guess > randomNumber){
+                    System.out.println(randomNumber);
+                    System.out.println("LOWER");
+                } else {
+                    System.out.println("CORRECT!");
+                }
+            } while(guess != randomNumber);
    }
 }
 
