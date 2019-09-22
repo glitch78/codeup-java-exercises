@@ -246,25 +246,34 @@ public class udemyCondtionals {
 //        }
 
         /////// Simple processing using arrays /////////
-        int count = 0;
-        int sumOfNums = 0;
+//        int count = 0;
+//        int sumOfNums = 0;
+//
+//        for(int i = 0; i < arbitraryNumbers.length; i++){
+//            // count all numbers over 100
+//        if(arbitraryNumbers[i] > 100){
+//            System.out.println(arbitraryNumbers[i]);
+//            count++;
+//
+//        }
+//        // add up all numbers
+//        sumOfNums = sumOfNums + arbitraryNumbers[i];
+//
+//        }
+//        System.out.println("There were " + count + " numbers over one hundred" );
+//        System.out.println();
+//        double avg = (double) sumOfNums / arbitraryNumbers.length;
+//        System.out.println("The average of arbitrary numbers is " + avg);
 
-        for(int i = 0; i < arbitraryNumbers.length; i++){
-            // count all numbers over 100
-        if(arbitraryNumbers[i] > 100){
-            System.out.println(arbitraryNumbers[i]);
-            count++;
+        String[] predictions =  new String[3];
+        predictions[0] = "A pioneer";
+        predictions[1] = "You will be loved by many";
+        predictions[2] = "you'll be very wealthy";
 
-        }
-        // add up all numbers
-        sumOfNums = sumOfNums + arbitraryNumbers[i];
+        System.out.println("I will predict your future, choose 1, 2, or 3.");
+        int choice = sc.nextInt();
 
-        }
-        System.out.println("There were " + count + " numbers over one hundred" );
-        System.out.println();
-        double avg = (double) sumOfNums / arbitraryNumbers.length;
-        System.out.println("The average of arbitrary numbers is " + avg);
-
+        System.out.println("In the future you will be " + predictions[choice -1]);
     }
 }
 
