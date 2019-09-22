@@ -1,5 +1,7 @@
 
 import jdk.swing.interop.SwingInterOpUtils;
+
+import java.util.WeakHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.Random;
 import java.util.Scanner;
@@ -167,7 +169,7 @@ public class udemyCondtionals {
 //            again = sc.next();
 //        } while (again.equalsIgnoreCase("yes"));
 
-      //////// The modulo operator ////////
+
 //        Write a program which prints numbers from 89 to 117
 //
 //        for(int i = 89; i <= 117; i++) {
@@ -175,14 +177,26 @@ public class udemyCondtionals {
 //        }
 //        Write a program which prints numbers from 1 to 40. After every third number, print “Quack.”.
 
-        for(int i = 1; i <= 40; i++){
-            if(i % 3==0){
-                System.out.println(i +"\nQuack");
-            }
-            else {
-                System.out.println(i);
-            }
-        }
-    }
+//        for(int i = 1; i <= 40; i++){
+//            if(i % 3==0){
+//                System.out.println(i +"\nQuack");
+//            }
+//            else {
+//                System.out.println(i);
+//            }
+//        }
+//        Write a program which asks the user for a password. Make the password “shark50”. Each time the user enters the password incorrectly, prompt them for a password again. When the user enters the password correctly, print “ACCESS APPROVED”.
+
+
+//        String userPasswordInput;
+        String userPassword = "shark50";
+        String userPasswordInput;
+
+         do {
+             System.out.println("Enter your password");
+               userPasswordInput = sc.nextLine();
+         }while (!userPasswordInput.equals(userPassword));
+        System.out.println("ACCESS APPROVED");
+   }
 }
 
