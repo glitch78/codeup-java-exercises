@@ -232,7 +232,7 @@ public class udemyConditionals {
 
         ///////// Introduction to arrays //////////
 
-        int[] arbitraryNumbers = {75,29, 350,7, 204, 88, 67};
+        int[] arbitraryNumbers = {75, 29, 350, 7, 204, 88, 67};
 //        System.out.println(b[3]);
 //
 //        for(int i = 0; i < 5; i++){
@@ -277,26 +277,78 @@ public class udemyConditionals {
 
         /////////  Inputting data and generating a statistic /////////
         // exercise on race car driver lap times
+//
+//        System.out.println("Number of laps: ");
+//
+//
+//        int numberOfLaps = sc.nextInt();
+//
+//        double[] lapTimes = new double[numberOfLaps];
+//
+//        for(int i = 0; i < numberOfLaps; i++){
+//            System.out.println("Lap time:");
+//            lapTimes[i] = sc.nextDouble();
+//        }
+//        double fastestTime = lapTimes[0];
+//        for(int i = 0; i < lapTimes.length; i++){
+//            if(lapTimes[i] < fastestTime){
+//                fastestTime = lapTimes[i];
+//            }
+//        }
+//
+//        System.out.println("The fastest time was: " + fastestTime);
 
-        System.out.println("Number of laps: ");
+//
+//        ////// Introduction to methods //////
+//        System.out.println(19);
+//        bar();
+//        foo();
+//        System.out.println(24);
+//    }
+//
+//    public static void foo() {
+//        int x = 50;
+//        System.out.println(x);
+//        System.out.println(16);
+//    }
+//    public static  void bar(){
+//        foo();
+//        System.out.println("12");
 
+        ////// Passing data to methods ////////
+//
+//        int var = 5;
+//
+//
+//        foo(var, 57.5, " It's hard to connect with people");
+//
+//
+//    }
+//    public static void foo(int a, double b, String c){
+//        System.out.println(a + b + c);
 
-        int numberOfLaps = sc.nextInt();
+        ////// Returning data from methods ///////
 
-        double[] lapTimes = new double[numberOfLaps];
+//        foo(3);
+//
+//        System.out.println(bar());
+//    }
+//
+//    public static void foo(int a) {
+//        if(a < 5){
+//            return;
+//        }
+//        System.out.println(a);
+//    }
+//
+//    public static double bar() {
+//    return 49.5;
 
-        for(int i = 0; i < numberOfLaps; i++){
-            System.out.println("Lap time:");
-            lapTimes[i] = sc.nextDouble();
-        }
-        double fastestTime = lapTimes[0];
-        for(int i = 0; i < lapTimes.length; i++){
-            if(lapTimes[i] < fastestTime){
-                fastestTime = lapTimes[i];
-            }
-        }
-
-        System.out.println("The fastest time was: " + fastestTime);
+//        System.out.println(coneVolume(4, 5));
+//    }
+//
+//    public static double coneVolume(double r, double h){
+//        return Math.PI * r * r * h / 3;
     }
 }
 
