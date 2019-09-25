@@ -327,6 +327,7 @@ public class udemyConditionals {
 //    public static void foo(int a, double b, String c){
 //        System.out.println(a + b + c);
 
+
         ////// Returning data from methods ///////
 
 //        foo(3);
@@ -349,6 +350,26 @@ public class udemyConditionals {
 //
 //    public static double coneVolume(double r, double h){
 //        return Math.PI * r * r * h / 3;
+//
+//        public static void fizzBuzzLoop() {
+//            int i = 1;
+//            while (true) {
+//                if (i % 3 == 0 && i % 5 == 0) {
+//                    System.out.println("FizzBuzz");
+//                } else if (i % 3 == 0) {
+//                    System.out.println("Fizz");
+//                } else if (i % 5 == 0) {
+//                    System.out.println("Buzz");
+//                } else {
+//                    System.out.println(i);
+//                }
+//                if (i == 100) {
+//                    break;
+//                }
+//                i++;
+//            }
+//        }
+
     }
 }
 

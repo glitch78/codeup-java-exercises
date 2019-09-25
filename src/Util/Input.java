@@ -4,14 +4,11 @@ import java.util.Scanner;
 
 public class Input {
 
-        private Scanner scanner;
+   private Scanner sc = new Scanner(System.in);;
 
-        public void input(){
-            this.scanner = new Scanner(System.in);
-        }
 
         public String getString(){
-            return this.scanner.nextLine();
+            return sc.nextLine();
         }
 
     public String getString(String prompt) {
@@ -19,24 +16,48 @@ public class Input {
         return this.getString();
     }
 
-        public boolean yesNo(){
-           String answer = this.scanner.nextLine();
-           if(answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")){
-               return true;
-           }else {
-               return false;
-           }
-
-        }
+    public boolean yesNo() {
+        String answer = sc.nextLine();
+        if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
+            return true;
+        } else return false;
+    }
     public boolean yesNo(String prompt) {
         System.out.println(prompt);
         return this.yesNo();
     }
 
-    public static void main(String[] args) {
-Input input = new Input();
-        System.out.println("enter your answer. Yes or no");
 
+    public int getInt(int min, int max) {
+
+        int input;
+
+        do {
+            System.out.println("enter an integer between " + min + "and " + max);
+            input = sc.nextInt();
+        } while(input<= min || input >= max);
+
+        return input;
     }
 
+    public int getInt() {
+        System.out.println("enter an integer again");
+        return sc.nextInt();
+    }
+
+    public double getDouble (double min, double max) {
+        int input;
+
+        do {
+            System.out.println("enter an integer between " + min + "and " + max);
+            input = sc.nextInt();
+        } while(input<= min || input >= max);
+
+        return input;
+    }
+
+    public double getDouble() {
+        System.out.println("another double digit number please ");
+        return sc.nextDouble();
+    }
 }
