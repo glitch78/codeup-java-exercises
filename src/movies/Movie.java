@@ -28,9 +28,19 @@ public class Movie {
         this.category = category;
     }
 
-    public static void main(String[] args) {
-        Input input = new Input();
-        System.out.println("");
-    }
+
+
+
+//    public static void main(String[] args) {
+//        Input input = new Input();
+//        System.out.println("what would you like to do?" + "\n0 - exit\n" +
+//                "1 - view all movies\n" +
+//                "2 - view movies in the animated category\n" +
+//                "3 - view movies in the drama category\n" +
+//                "4 - view movies in the horror category\n" +
+//                "5 - view movies in the scifi category");
+//        int userinput = input.getInt();
+
+//    }
 
 }
