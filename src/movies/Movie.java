@@ -1,7 +1,5 @@
 package movies;
 
-import Util.Input;
-
 public class Movie {
     private String name;
     private String category;

@@ -1,6 +1,6 @@
 import movies.Movie;
 import movies.MoviesArray;
-import Util.Input;
+import util.Input;
 public class MoviesApplication {
     public static void main(String[] args) {
         Input input = new Input();

@@ -14,13 +14,14 @@ protected double width;
     }
 
 
-
-    public double getWidth() {
-        return width;
-    }
+//
+//    public double getWidth() {
+//        return width;
+//    }
 
 
 
     public abstract void  setLength(double length);
     public abstract void  setWidth(double width);
+    public  double  getWidth() {return this.width;}
 }
